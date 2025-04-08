@@ -35,3 +35,4 @@ def create_quiz_file():
         return
     
     filename = f"{category}.txt"
+    questions = []
