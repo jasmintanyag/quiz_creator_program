@@ -29,7 +29,7 @@
 import json
 from colorama import init, Fore, Style
 
-
+init(autoreset=True)
 
 def create_quiz_file():
     print("\n Welcome to Quiz Creation!")
