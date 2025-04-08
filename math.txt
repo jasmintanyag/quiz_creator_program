@@ -4,3 +4,4 @@
 {"questions": "2+2", "options": {"a": "2", "b": "3", "c": "4", "d": "5"}, "correct": "c"}
 {"questions": "100 - 20", "options": {"a": "80", "b": "85", "c": "90", "d": "95"}, "correct": "a"}
 {"questions": "6 x 6", "options": {"a": "6", "b": "26", "c": "36", "d": "16"}, "correct": "c"}
+{"questions": "2 + 3", "options": {"a": "2", "b": "3", "c": "4", "d": "5"}, "correct": "d"}
