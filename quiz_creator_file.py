@@ -27,3 +27,5 @@
 import json
 
 def create_quiz_file():
+    print("\n Welcome to Quiz Creation!")
+    print("(Type 'exit' anytime to quit.)\n")
