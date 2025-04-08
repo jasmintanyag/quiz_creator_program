@@ -2,3 +2,5 @@
 {"questions": "What is 3 ** 3?", "options": {"a": "9", "b": "18", "c": "27", "d": "36"}, "correct": "c"}
 {"questions": "1 + 1?", "options": {"a": "1", "b": "2", "c": "3", "d": "4"}, "correct": "b"}
 {"questions": "2+2", "options": {"a": "2", "b": "3", "c": "4", "d": "5"}, "correct": "c"}
+{"questions": "100 - 20", "options": {"a": "80", "b": "85", "c": "90", "d": "95"}, "correct": "a"}
+{"questions": "6 x 6", "options": {"a": "6", "b": "26", "c": "36", "d": "16"}, "correct": "c"}
