@@ -50,9 +50,12 @@ def create_quiz_file():
             
             options[choice] = answers
 
-        correct_ans = input("Enter the CORRECT answer (a, b, c, d): ").lower()
+        correct_ans = input("Enter the CORRECT answer (a, b, c, d): ").lower().strip()
+        print(f"Received input: {correct_ans}") #debugging line
         while correct_ans not in ['a', 'b', 'c', 'd']:
-            correct_ans = input("INVALID. Choose only from (a, b, c, d): ").lower
+            correct_ans = input("INVALID. Choose only from (a, b, c, d): ").lower().strip()
+
+        print(f"You entered: {correct_ans}")
 
         questions.append({
             "questions": questn,

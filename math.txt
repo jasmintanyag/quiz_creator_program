@@ -1,0 +1,4 @@
+{"questions": "What is 2 x 2?", "options": {"a": "2", "b": "4", "c": "6", "d": "8"}, "correct": "b"}
+{"questions": "What is 3 ** 3?", "options": {"a": "9", "b": "18", "c": "27", "d": "36"}, "correct": "c"}
+{"questions": "1 + 1?", "options": {"a": "1", "b": "2", "c": "3", "d": "4"}, "correct": "b"}
+{"questions": "2+2", "options": {"a": "2", "b": "3", "c": "4", "d": "5"}, "correct": "c"}
