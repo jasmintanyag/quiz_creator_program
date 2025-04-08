@@ -64,3 +64,8 @@ def create_quiz_file():
     with open(filename, "a") as f:
         for entry in questions:
             f.write(json.dumps(entry) + "\n")
+    
+    print(f"All questions are now saved in {filename} under the {category} category.")
+
+if __name__ == "__main__":
+    create_quiz_file()
