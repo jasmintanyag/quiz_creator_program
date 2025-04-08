@@ -24,7 +24,12 @@
 
 # Print ending message
 
+# Add some colors and emojis
+
 import json
+from colorama import init, Fore, Style
+
+
 
 def create_quiz_file():
     print("\n Welcome to Quiz Creation!")
