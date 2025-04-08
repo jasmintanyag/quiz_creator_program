@@ -31,4 +31,5 @@ def create_quiz_file():
     print("(Type 'exit' anytime to quit.)\n")
 
     category = input("Enter a quiz category: ").lower().strip()
-    
+    if not category or category == 'exit':
+        return
