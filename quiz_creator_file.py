@@ -61,3 +61,6 @@ def create_quiz_file():
         
         print("Question added!")
         
+    with open(filename, "a") as f:
+        for entry in questions:
+            f.write(json.dumps(entry) + "\n")
