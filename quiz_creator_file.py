@@ -47,4 +47,5 @@ def create_quiz_file():
             answers = input(f"Option {choice}: ")
             if answers.lower() == 'exit':
                 return
+            
             options[choice] = answers
