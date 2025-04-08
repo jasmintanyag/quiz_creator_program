@@ -59,3 +59,5 @@ def create_quiz_file():
             "options": options,
             "correct": correct_ans})
         
+        print("Question added!")
+        
