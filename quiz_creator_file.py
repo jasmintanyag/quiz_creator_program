@@ -43,3 +43,8 @@ def create_quiz_file():
             break
 
         options = {}
+        for choice in ['a', 'b', 'c', 'd']:
+            answers = input(f"Option {choice}: ")
+            if answers.lower() == 'exit':
+                return
+            options[choice] = answers
