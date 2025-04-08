@@ -36,3 +36,8 @@ def create_quiz_file():
     
     filename = f"{category}.txt"
     questions = []
+
+    while True:
+        questn = input("Enter a question: ")
+        if questn.lower() == 'exit':
+            break
