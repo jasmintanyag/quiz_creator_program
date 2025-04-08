@@ -33,3 +33,5 @@ def create_quiz_file():
     category = input("Enter a quiz category: ").lower().strip()
     if not category or category == 'exit':
         return
+    
+    filename = f"{category}.txt"
