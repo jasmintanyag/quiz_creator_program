@@ -51,3 +51,5 @@ def create_quiz_file():
             options[choice] = answers
 
         correct_ans = input("Enter the CORRECT answer (a, b, c, d): ").lower()
+        while correct_ans not in ['a', 'b', 'c', 'd']:
+            correct_ans = input("INVALID. Choose only from (a, b, c, d): ").lower
