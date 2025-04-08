@@ -49,3 +49,5 @@ def create_quiz_file():
                 return
             
             options[choice] = answers
+
+        correct_ans = input("Enter the CORRECT answer (a, b, c, d): ").lower()
