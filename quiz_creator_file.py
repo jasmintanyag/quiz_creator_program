@@ -23,3 +23,7 @@
 # Write the question in JSON format
 
 # Print ending message
+
+import json
+
+def create_quiz_file():
