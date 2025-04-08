@@ -41,3 +41,5 @@ def create_quiz_file():
         questn = input("Enter a question: ")
         if questn.lower() == 'exit':
             break
+
+        options = {}
