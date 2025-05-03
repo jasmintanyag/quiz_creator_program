@@ -158,6 +158,8 @@ def play_quiz():
             # Play 'correct' sound and display 'correct' message
         # If wrong
             # Play 'wrong' sound and display 'wrong' message, then show the correct answer
+
+        users_answer = input("Your answer is: ")
     
     # After answering all questions
         # Print final score
