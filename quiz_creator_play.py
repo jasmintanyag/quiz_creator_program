@@ -116,6 +116,8 @@ def play_quiz():
     
     print("Welcome to Quizzierett!")
     players_name = input("Enter your name: ")
+    if not players_name:
+        print("The name should not be empty.")
 
     # For every question
         # Put a divider
