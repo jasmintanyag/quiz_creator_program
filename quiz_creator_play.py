@@ -160,7 +160,10 @@ def play_quiz():
             # Play 'wrong' sound and display 'wrong' message, then show the correct answer
 
         users_answer = input("Your answer is: ")
-        
+        if users_answer.lower() == question_file["correct"]:
+            play_sound("correct.wav")
+            print("Your answer is CORRECT!")
+            score =+ 1
     
     # After answering all questions
         # Print final score
