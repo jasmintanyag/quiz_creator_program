@@ -126,6 +126,9 @@ def play_quiz():
     try:
         catgry_index = int(input("Choose a category (number only): ")) -1
         selected_category = categories[catgry_index]
+    except (IndexError, ValueError):
+        print("Invalid choice!")
+        return
 
     # For every question
         # Put a divider
