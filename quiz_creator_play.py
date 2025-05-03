@@ -50,7 +50,8 @@ def save_scores(scores):
         # Overwrite the countdown w/ spaces to clear the line
 
 def countdown(seconds=3):
-    
+    sound = pygame.mixer.Sound("start_quiz.wav")
+    sound.play()
 
 # Define load questions
     # Initialize empty set to store questions
