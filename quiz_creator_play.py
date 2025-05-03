@@ -27,6 +27,8 @@ def play_sound(filename):
     # Else
         # Return empty dictionary
 
+SCORE_FILE = "scores.json"
+
 # Define save scores
     # Open the file in write mode
     # Write the scores to json
