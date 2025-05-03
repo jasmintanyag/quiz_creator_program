@@ -86,6 +86,7 @@ def load_questions(category):
     # Return list of category names
 
 def list_categories():
+    return [filename[:-4] for filename in os.listdir() if filename.endswith(".txt")]
 
 # Define play quiz
     # Get the list of categories
