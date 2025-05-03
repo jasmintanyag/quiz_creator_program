@@ -110,6 +110,9 @@ def list_categories():
 
 def play_quiz():
     categories = list_categories()
+    if not categories:
+        print("No categories found.")
+        return
 
     # For every question
         # Put a divider
