@@ -73,6 +73,9 @@ def load_questions(category):
         print(f"The file '{filename}' is not found.")
         return questions
     with open(filename, "r") as file:
+        for line in file:
+            try:
+                questions.append(json.loads(line.strip()))
 
 # Define list categories
     # List all the .txt file
