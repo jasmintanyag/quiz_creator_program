@@ -92,21 +92,6 @@ def list_categories():
     # Get the list of categories
     # If no category
         # Print error message
-    # Print welcome message
-    # Ask user to input name
-    # If name is empty
-        # Print error message
-    # Print list of category
-    # Ask user to choose category
-    # If invalid
-        # Print error message
-    # Load questions of the selected category
-    # If no valid questions
-        # Print error message
-
-    # Randomize the questions
-    # Set initial score to 0
-    # Start the quiz
 
 def play_quiz():
     categories = list_categories()
@@ -114,12 +99,22 @@ def play_quiz():
         print("No categories found.")
         return
     
+    # Print welcome message
+    # Ask user to input name
+    # If name is empty
+        # Print error message
+            
     print("Welcome to Quizzierett!")
     players_name = input("Enter your name: ")
     if not players_name:
         print("The name should not be empty.")
         return
     
+    # Print list of category
+    # Ask user to choose category
+    # If invalid
+        # Print error message
+        
     print("\nThe Categories are:")
     for index, catgry in enumerate(categories, 1):
         print(f"{index}.{catgry}")
@@ -130,11 +125,19 @@ def play_quiz():
         print("Invalid choice!")
         return
     
+    # Load questions of the selected category
+    # If no valid questions
+        # Print error message
+
     questions = load_questions(selected_category)
     if not questions:
         print("No valid questions in this category.")
         return
     
+    # Randomize the questions
+    # Set initial score to 0
+    # Start the quiz
+
     random.shuffle(questions)
     score = 0
     countdown()
