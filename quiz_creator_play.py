@@ -96,6 +96,7 @@ def main_menu():
         print("\n----- Quizzierett -----")
         print("1. Play Quiz")
         print("2. Exit")
+        choice = input("Select an option: ")
 
 # If script is run directly
     # Call main menu
