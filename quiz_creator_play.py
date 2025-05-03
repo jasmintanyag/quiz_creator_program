@@ -176,7 +176,9 @@ def play_quiz():
 
     print(f"CONGRATULATIONS! You completed the quiz! \nYour score is: {score}/{len(questions)}")
 
-    
+    scores = load_scores
+    scores[players_name] = score
+    save_scores(scores)
 
 # Define main menu
     # Create loop
