@@ -206,3 +206,6 @@ def main_menu():
 
 # If script is run directly
     # Call main menu
+
+if __name__ == "__main__":
+    main_menu()
