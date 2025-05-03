@@ -28,6 +28,8 @@ def play_sound(filename):
         # Return empty dictionary
 
 SCORE_FILE = "scores.json"
+def load_scores():
+    
 
 # Define save scores
     # Open the file in write mode
