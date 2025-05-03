@@ -160,6 +160,7 @@ def play_quiz():
             # Play 'wrong' sound and display 'wrong' message, then show the correct answer
 
         users_answer = input("Your answer is: ")
+        
     
     # After answering all questions
         # Print final score
