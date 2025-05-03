@@ -164,6 +164,9 @@ def play_quiz():
             play_sound("correct.wav")
             print("Your answer is CORRECT!")
             score =+ 1
+        else:
+            play_sound("wrong.wav")
+            print(f"WRONG! The correct answer is {question_file["correct"].upper()}")
     
     # After answering all questions
         # Print final score
