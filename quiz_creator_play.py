@@ -199,6 +199,8 @@ def main_menu():
         choice = input("Select an option: ")
         if choice == 1:
             play_quiz()
+        elif choice == 2:
+            print("Exiting..... Goodbye!")
 
 # If script is run directly
     # Call main menu
