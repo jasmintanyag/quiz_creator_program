@@ -38,8 +38,9 @@ def load_scores():
     # Open the file in write mode
     # Write the scores to json
 
-def save_scores():
+def save_scores(scores):
     with open(SCORE_FILE, "w") as score_file:
+        json.dump(scores, score_file, indent=5)
 
 # Define countdown
     # Play the starting sound
