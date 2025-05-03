@@ -39,7 +39,7 @@ def load_scores():
     # Write the scores to json
 
 def save_scores():
-    
+    with open(SCORE_FILE, "w") as score_file:
 
 # Define countdown
     # Play the starting sound
