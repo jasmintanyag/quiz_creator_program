@@ -7,6 +7,8 @@ from colorama import init, Fore, Style
 import pygame
 
 # Initialize colorama and pygame
+init(autoreset=True)
+pygame.mixer.init()
 
 # Define play sound
     # Load music file
