@@ -118,6 +118,11 @@ def play_quiz():
     players_name = input("Enter your name: ")
     if not players_name:
         print("The name should not be empty.")
+        return
+    
+    print("\nThe Categories are:")
+    for index, catgry in enumerate(categories, 1):
+        print(f"{index}.{catgry}")
 
     # For every question
         # Put a divider
