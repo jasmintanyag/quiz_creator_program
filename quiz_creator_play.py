@@ -146,6 +146,13 @@ def play_quiz():
         # Put a divider
         # Print the question
         # Print all choices (A, B, C, D)
+
+    for question_file in questions:
+        print(f"\n" + "~" * 50)
+        print(f"{question_file["questions"]}")
+        for key, val in question_file["options"].items():
+            print(f"{key.upper()}: {val}")
+
         # Ask user their answer
         # If correct
             # Play 'correct' sound and display 'correct' message
