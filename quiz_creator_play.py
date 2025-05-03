@@ -54,7 +54,7 @@ def countdown(seconds=3):
     sound.play()
     for remaining_seconds in range(seconds, 0, -1):
         print(f"{Fore.YELLOW}The quiz will start in {remaining_seconds}...", end="\r")
-        time.sleep(1)
+        time.sleep(0.5)
     print(" " * 30, end="\r")
 
 # Define load questions
@@ -104,7 +104,7 @@ def play_quiz():
     # If name is empty
         # Print error message
             
-    print("Welcome to Quizzierett!")
+    print(f"{Fore.CYAN}Welcome to Quizzierett!")
     players_name = input("Enter your name: ")
     if not players_name:
         print(f"{Fore.RED}The name should not be empty.")
@@ -149,7 +149,7 @@ def play_quiz():
 
     for question_file in questions:
         print(f"\n" + "~" * 50)
-        print(f"{question_file['questions']}")
+        print(f"{Fore.MAGENTA}{question_file['questions']}")
         for key, val in question_file["options"].items():
             print(f"{key.upper()}: {val}")
 
@@ -196,7 +196,7 @@ def main_menu():
         print(f"\n{Fore.YELLOW}----- Quizzierett -----")
         print("1. Play Quiz")
         print("2. Exit")
-        choice = input("Select an option: ")
+        choice = input(f"{Fore.MAGENTA}Select an option: ")
         if choice == "1":
             play_quiz()
         elif choice == "2":
