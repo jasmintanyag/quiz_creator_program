@@ -113,6 +113,8 @@ def play_quiz():
     if not categories:
         print("No categories found.")
         return
+    
+    print("Welcome to Quizzierett!")
 
     # For every question
         # Put a divider
