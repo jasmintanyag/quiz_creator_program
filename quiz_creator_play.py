@@ -15,7 +15,10 @@ pygame.mixer.init()
     # Play music file
 
 def play_sound(filename):
-
+    pygame.mixer.music.load(filename)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        continue
 
 # Set score file -> "scores.json"
 # Define load scores
