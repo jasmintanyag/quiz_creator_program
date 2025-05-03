@@ -180,6 +180,8 @@ def play_quiz():
     scores[players_name] = score
     save_scores(scores)
 
+    print(f"Your score has been saved under the name '{players_name}.")
+
 # Define main menu
     # Create loop
         # Print the header
