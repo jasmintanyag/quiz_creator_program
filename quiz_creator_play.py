@@ -115,6 +115,7 @@ def play_quiz():
         return
     
     print("Welcome to Quizzierett!")
+    players_name = input("Enter your name: ")
 
     # For every question
         # Put a divider
