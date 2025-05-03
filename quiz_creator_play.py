@@ -52,6 +52,8 @@ def save_scores(scores):
 def countdown(seconds=3):
     sound = pygame.mixer.Sound("start_quiz.wav")
     sound.play()
+    for remaining_seconds in range(seconds, 0, -1):
+        print(f"The quiz will start in {remaining_seconds}...", end="\r")
 
 # Define load questions
     # Initialize empty set to store questions
