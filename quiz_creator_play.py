@@ -69,6 +69,8 @@ def countdown(seconds=3):
 def load_questions(category):
     filename = "f{category}.txt"
     questions = []
+    if not os.path.exists(filename):
+        print(f"The file '{filename}' is not found.")
 
 # Define list categories
     # List all the .txt file
