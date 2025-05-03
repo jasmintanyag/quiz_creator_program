@@ -1,0 +1,3 @@
+{"questions": "Full name", "options": {"a": "Jasmin Lorchano Tanyag", "b": "Jasmin Loud Tanyag", "c": "Jasmin Lorchano Tayag", "d": "Jasmin Tanag"}, "correct": "a"}
+{"questions": "Age", "options": {"a": "17", "b": "18", "c": "19", "d": "20"}, "correct": "b"}
+{"questions": "Fav Color", "options": {"a": "Pink", "b": "Purple", "c": "Black", "d": "Blue"}, "correct": "a"}
