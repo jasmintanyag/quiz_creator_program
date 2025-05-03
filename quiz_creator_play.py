@@ -174,6 +174,10 @@ def play_quiz():
         # Add or update the score
         # Save the score, then print confirmation message
 
+    print(f"CONGRATULATIONS! You completed the quiz! \nYour score is: {score}/{len(questions)}")
+
+    
+
 # Define main menu
     # Create loop
         # Print the header
