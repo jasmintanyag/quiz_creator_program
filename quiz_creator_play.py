@@ -1,4 +1,10 @@
 # Import needed libraries
+import json
+import os
+import random
+import time
+from colorama import init, Fore, Style
+import pygame
 
 # Initialize colorama and pygame
 
