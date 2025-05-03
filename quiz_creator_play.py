@@ -137,6 +137,7 @@ def play_quiz():
     
     random.shuffle(questions)
     score = 0
+    countdown()
 
     # For every question
         # Put a divider
