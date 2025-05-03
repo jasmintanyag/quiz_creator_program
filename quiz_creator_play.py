@@ -201,6 +201,8 @@ def main_menu():
             play_quiz()
         elif choice == 2:
             print("Exiting..... Goodbye!")
+        else:
+            print("Invalid input!")
 
 # If script is run directly
     # Call main menu
