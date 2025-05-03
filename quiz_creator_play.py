@@ -66,6 +66,8 @@ def countdown(seconds=3):
     # If not valid, print error message
     # Return
 
+def load_questions(category):
+
 # Define list categories
     # List all the .txt file
     # Remove .txt from each file name
