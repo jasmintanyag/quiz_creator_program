@@ -109,7 +109,7 @@ def list_categories():
     # Start the quiz
 
 def play_quiz():
-    
+    categories = list_categories()
 
     # For every question
         # Put a divider
