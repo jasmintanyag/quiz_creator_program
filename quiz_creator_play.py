@@ -53,7 +53,7 @@ def countdown(seconds=3):
     sound = pygame.mixer.Sound("start_quiz.wav")
     sound.play()
     for remaining_seconds in range(seconds, 0, -1):
-        print(f"The quiz will start in {remaining_seconds}...", end="\r")
+        print(f"{Fore.YELLOW}The quiz will start in {remaining_seconds}...", end="\r")
         time.sleep(1)
     print(" " * 30, end="\r")
 
@@ -70,14 +70,14 @@ def load_questions(category):
     filename = f"{category}.txt"
     questions = []
     if not os.path.exists(filename):
-        print(f"The file '{filename}' is not found.")
+        print(f"{Fore.RED}The file '{filename}' is not found.")
         return questions
     with open(filename, "r") as file:
         for line in file:
             try:
                 questions.append(json.loads(line.strip()))
             except json.JSONDecodeError:
-                print("Invalid line")
+                print(f"{Fore.RED}Invalid line")
     return questions
 
 # Define list categories
@@ -96,7 +96,7 @@ def list_categories():
 def play_quiz():
     categories = list_categories()
     if not categories:
-        print("No categories found.")
+        print(f"{Fore.RED}No categories found.")
         return
     
     # Print welcome message
@@ -107,7 +107,7 @@ def play_quiz():
     print("Welcome to Quizzierett!")
     players_name = input("Enter your name: ")
     if not players_name:
-        print("The name should not be empty.")
+        print(f"{Fore.RED}The name should not be empty.")
         return
     
     # Print list of category
@@ -122,7 +122,7 @@ def play_quiz():
         catgry_index = int(input("Choose a category (number only): ")) -1
         selected_category = categories[catgry_index]
     except (IndexError, ValueError):
-        print("Invalid choice!")
+        print(f"{Fore.RED}Invalid choice!")
         return
     
     # Load questions of the selected category
@@ -131,7 +131,7 @@ def play_quiz():
 
     questions = load_questions(selected_category)
     if not questions:
-        print("No valid questions in this category.")
+        print(f"{Fore.RED}No valid questions in this category.")
         return
     
     # Randomize the questions
@@ -162,11 +162,11 @@ def play_quiz():
         users_answer = input("Your answer is: ")
         if users_answer.lower() == question_file["correct"]:
             play_sound("correct.wav")
-            print("Your answer is CORRECT!")
+            print(f"{Fore.GREEN}Your answer is CORRECT!")
             score =+ 1
         else:
             play_sound("wrong.wav")
-            print(f"WRONG! The correct answer is {question_file['correct'].upper()}")
+            print(f"{Fore.RED}WRONG! The correct answer is {question_file['correct'].upper()}")
     
     # After answering all questions
         # Print final score
@@ -174,13 +174,13 @@ def play_quiz():
         # Add or update the score
         # Save the score, then print confirmation message
 
-    print(f"CONGRATULATIONS! You completed the quiz! \nYour score is: {score}/{len(questions)}")
+    print(f"{Fore.YELLOW}CONGRATULATIONS! You completed the quiz! \nYour score is: {score}/{len(questions)}")
 
     scores = load_scores
     scores[players_name] = score
     save_scores(scores)
 
-    print(f"Your score has been saved under the name '{players_name}.")
+    print(f"{Fore.CYAN}Your score has been saved under the name '{players_name}.")
 
 # Define main menu
     # Create loop
@@ -193,19 +193,21 @@ def play_quiz():
 
 def main_menu():
     while True:
-        print("\n----- Quizzierett -----")
+        print(f"\n{Fore.YELLOW}----- Quizzierett -----")
         print("1. Play Quiz")
         print("2. Exit")
         choice = input("Select an option: ")
         if choice == "1":
             play_quiz()
         elif choice == "2":
-            print("Exiting..... Goodbye!")
+            print(f"{Fore.CYAN}Exiting..... Goodbye!")
         else:
-            print("Invalid input!")
+            print(f"{Fore.RED}Invalid input!")
 
 # If script is run directly
     # Call main menu
 
 if __name__ == "__main__":
     main_menu()
+
+# Add some colors
