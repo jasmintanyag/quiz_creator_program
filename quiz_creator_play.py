@@ -123,6 +123,9 @@ def play_quiz():
     print("\nThe Categories are:")
     for index, catgry in enumerate(categories, 1):
         print(f"{index}.{catgry}")
+    try:
+        catgry_index = int(input("Choose a category (number only): ")) -1
+        selected_category = categories[catgry_index]
 
     # For every question
         # Put a divider
