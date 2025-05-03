@@ -163,7 +163,7 @@ def play_quiz():
         if users_answer.lower() == question_file["correct"]:
             play_sound("correct.wav")
             print(f"{Fore.GREEN}✅ Your answer is CORRECT!")
-            score =+ 1
+            score += 1
         else:
             play_sound("wrong.wav")
             print(f"{Fore.RED}❌ WRONG! The correct answer is {question_file['correct'].upper()}")
@@ -176,7 +176,7 @@ def play_quiz():
 
     print(f"{Fore.YELLOW}🎉 CONGRATULATIONS! You completed the quiz! \nYour score is: {score}/{len(questions)}")
 
-    scores = load_scores
+    scores = load_scores()
     scores[players_name] = score
     save_scores(scores)
 
