@@ -91,5 +91,7 @@ pygame.mixer.init()
         # If 2, print goodbye message
         # Else, print error message
 
+def main_menu():
+
 # If script is run directly
     # Call main menu
