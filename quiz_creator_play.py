@@ -85,6 +85,8 @@ def load_questions(category):
     # Remove .txt from each file name
     # Return list of category names
 
+def list_categories():
+
 # Define play quiz
     # Get the list of categories
     # If no category
