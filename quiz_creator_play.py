@@ -131,6 +131,9 @@ def play_quiz():
         return
     
     questions = load_questions(selected_category)
+    if not questions:
+        print("No valid questions in this category.")
+        return
 
     # For every question
         # Put a divider
