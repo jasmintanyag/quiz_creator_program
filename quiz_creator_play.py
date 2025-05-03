@@ -100,7 +100,7 @@ def list_categories():
     # Ask user to choose category
     # If invalid
         # Print error message
-    # Load questions  of the selected category
+    # Load questions of the selected category
     # If no valid questions
         # Print error message
 
@@ -129,6 +129,8 @@ def play_quiz():
     except (IndexError, ValueError):
         print("Invalid choice!")
         return
+    
+    questions = load_questions(selected_category)
 
     # For every question
         # Put a divider
