@@ -67,7 +67,7 @@ def countdown(seconds=3):
     # Return
 
 def load_questions(category):
-    filename = "f{category}.txt"
+    filename = f"{category}.txt"
     questions = []
     if not os.path.exists(filename):
         print(f"The file '{filename}' is not found.")
@@ -149,7 +149,7 @@ def play_quiz():
 
     for question_file in questions:
         print(f"\n" + "~" * 50)
-        print(f"{question_file["questions"]}")
+        print(f"{question_file['questions']}")
         for key, val in question_file["options"].items():
             print(f"{key.upper()}: {val}")
 
@@ -166,7 +166,7 @@ def play_quiz():
             score =+ 1
         else:
             play_sound("wrong.wav")
-            print(f"WRONG! The correct answer is {question_file["correct"].upper()}")
+            print(f"WRONG! The correct answer is {question_file['correct'].upper()}")
     
     # After answering all questions
         # Print final score
@@ -197,9 +197,9 @@ def main_menu():
         print("1. Play Quiz")
         print("2. Exit")
         choice = input("Select an option: ")
-        if choice == 1:
+        if choice == "1":
             play_quiz()
-        elif choice == 2:
+        elif choice == "2":
             print("Exiting..... Goodbye!")
         else:
             print("Invalid input!")
