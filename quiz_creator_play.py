@@ -134,6 +134,8 @@ def play_quiz():
     if not questions:
         print("No valid questions in this category.")
         return
+    
+    random.shuffle(questions)
 
     # For every question
         # Put a divider
