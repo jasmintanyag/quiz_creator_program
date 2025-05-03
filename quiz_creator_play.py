@@ -49,6 +49,9 @@ def save_scores(scores):
     # When countdown ends
         # Overwrite the countdown w/ spaces to clear the line
 
+def countdown(seconds=3):
+    
+
 # Define load questions
     # Initialize empty set to store questions
     # If file doesn't exist
