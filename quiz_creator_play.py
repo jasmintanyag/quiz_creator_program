@@ -54,6 +54,8 @@ def countdown(seconds=3):
     sound.play()
     for remaining_seconds in range(seconds, 0, -1):
         print(f"The quiz will start in {remaining_seconds}...", end="\r")
+        time.sleep(1)
+    print(" " * 30, end="\r")
 
 # Define load questions
     # Initialize empty set to store questions
