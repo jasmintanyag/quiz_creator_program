@@ -76,6 +76,9 @@ def load_questions(category):
         for line in file:
             try:
                 questions.append(json.loads(line.strip()))
+            except json.JSONDecodeError:
+                print("Invalid line")
+    return questions
 
 # Define list categories
     # List all the .txt file
