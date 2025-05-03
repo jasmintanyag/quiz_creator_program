@@ -29,7 +29,9 @@ def play_sound(filename):
 
 SCORE_FILE = "scores.json"
 def load_scores():
-    
+    if os.path.exists(SCORE_FILE):
+        with open(SCORE_FILE, "r") as score_file:
+            return json.load(score_file)
 
 # Define save scores
     # Open the file in write mode
