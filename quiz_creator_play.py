@@ -108,6 +108,9 @@ def list_categories():
     # Set initial score to 0
     # Start the quiz
 
+def play_quiz():
+    
+
     # For every question
         # Put a divider
         # Print the question
