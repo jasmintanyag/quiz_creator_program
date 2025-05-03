@@ -136,7 +136,7 @@ def play_quiz():
     
     # Randomize the questions
     # Set initial score to 0
-    # Start the quiz
+    # Call the countdown before the quiz starts
 
     random.shuffle(questions)
     score = 0
