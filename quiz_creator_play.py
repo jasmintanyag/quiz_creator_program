@@ -71,6 +71,8 @@ def load_questions(category):
     questions = []
     if not os.path.exists(filename):
         print(f"The file '{filename}' is not found.")
+        return questions
+    with open(filename, "r") as file:
 
 # Define list categories
     # List all the .txt file
