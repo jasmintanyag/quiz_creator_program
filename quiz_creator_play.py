@@ -197,6 +197,8 @@ def main_menu():
         print("1. Play Quiz")
         print("2. Exit")
         choice = input("Select an option: ")
+        if choice == 1:
+            play_quiz()
 
 # If script is run directly
     # Call main menu
