@@ -32,6 +32,7 @@ def load_scores():
     if os.path.exists(SCORE_FILE):
         with open(SCORE_FILE, "r") as score_file:
             return json.load(score_file)
+    return {}
 
 # Define save scores
     # Open the file in write mode
