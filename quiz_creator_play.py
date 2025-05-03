@@ -67,6 +67,8 @@ def countdown(seconds=3):
     # Return
 
 def load_questions(category):
+    filename = "f{category}.txt"
+    questions = []
 
 # Define list categories
     # List all the .txt file
