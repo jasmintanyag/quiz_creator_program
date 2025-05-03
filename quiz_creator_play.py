@@ -92,6 +92,10 @@ pygame.mixer.init()
         # Else, print error message
 
 def main_menu():
+    while True:
+        print("\n----- Quizzierett -----")
+        print("1. Play Quiz")
+        print("2. Exit")
 
 # If script is run directly
     # Call main menu
